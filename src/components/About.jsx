@@ -23,7 +23,9 @@ export default function About() {
             I specialize in modern frontend and backend technologies, and I’m
             always eager to learn and explore new tools and frameworks. In my
             free time, I enjoy experimenting with design, fitness, and Japanese
-            culture.
+            culture. With extra knowledge on the many areas of XR, Game
+            Development, Machine Learning and Deep Learning, I am a dynamic
+            coding octopus.
           </p>
         </div>
       </div>
