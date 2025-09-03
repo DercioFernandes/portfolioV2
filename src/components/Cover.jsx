@@ -4,7 +4,7 @@ export default function Cover() {
       <div className="flex w-full h-screen">
         <div className="w-1/3 relative">
           <img
-            src="PortfolioCoverImg3.jpeg"
+            src="PortfolioCoverImg.jpeg"
             alt="Image"
             className="h-full w-full object-cover slide-right"
           />
