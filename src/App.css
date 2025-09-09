@@ -35,12 +35,9 @@
 
 @font-face {
   font-family: "Luam-Regular";
-  src: url("/fonts/Luam-Regular.ttf") format("truetype");
+  src: url("/fonts/Luam-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-body {
 }
 
 .luamBold {
@@ -73,6 +70,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: neon-gradient 3s linear infinite;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #006eff, #00d9ff, #0059ff, #0088ff);
+  background-size: 300% 100%; /* makes the gradient much wider than text */
   animation: neon-gradient 3s linear infinite;
 }
 
