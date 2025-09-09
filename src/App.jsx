@@ -4,11 +4,16 @@ import Statistics from "./components/Statistics";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import NewCover from "./components/NewCover";
+import SideBar from "./components/SideBar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Cover />
+      <Navbar />
+      <SideBar />
+      <NewCover />
 
       <Statistics />
       <About />

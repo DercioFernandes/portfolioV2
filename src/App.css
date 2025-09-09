@@ -1,8 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 @import "tailwindcss";
 
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Gilmoray";
+  src: url("/fonts/gilmoray.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PerfectMoment";
+  src: url("/fonts/PerfectMoment-Script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Luam-Light";
+  src: url("/fonts/Luam-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Luam-Bold";
+  src: url("/fonts/Luam-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Luam-Regular";
+  src: url("/fonts/Luam-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Noto Sans JP", sans-serif;
+}
+
+.luamBold {
+  font-family: "Luam-Bold", sans-serif;
+}
+
+.luamLight {
+  font-family: "Luam-Light", sans-serif;
+}
+
+.luamRegular {
+  font-family: "Luam-Regular", sans-serif;
+}
+
+.eerieblack {
+  background-color: #030303;
 }
 
 .stats-bar {
