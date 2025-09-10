@@ -27,7 +27,7 @@ const projects = [
     src: "viamarketWT.png",
   },
   {
-    title: "More",
+    title: "My Github",
     link: "https://github.com/DercioFernandes/",
     src: "azulejos.png",
   },

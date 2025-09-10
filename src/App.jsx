@@ -20,7 +20,6 @@ function App() {
   const width = useWindowWidth();
   if (width === null) return null; // wait until width is known
   const isMobile = width <= 768;
-  console.log(isMobile);
   return (
     <>
       {isMobile ? <MobileNavbar /> : <Navbar />}
