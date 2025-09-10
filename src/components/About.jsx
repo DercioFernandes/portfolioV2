@@ -9,19 +9,19 @@ export default function About() {
       {/* About Me Section */}
       <section
         id="about"
-        className="w-full min-h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col md:flex-row items-center px-6 md:px-20 gap-12 md:pl-100"
+        className="w-full min-h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-12 md:pl-100"
       >
         {/* Left side image */}
         <div className="flex-1 relative">
           <img
             src="/aboutme2.png"
             alt="Profile"
-            className="w-[80%] h-auto object-cover shadow-2xl rounded-xl -translate-x-10"
+            className="w-full md:w-[80%] h-auto object-cover shadow-2xl rounded-xl md:-translate-x-10"
           />
         </div>
 
         {/* Right side content */}
-        <div className="flex-1 flex flex-col justify-between pt-30">
+        <div className="flex-1 flex flex-col justify-between text-center md:text-left pt-30">
           {/* Top line */}
           <div className="w-16 h-1 bg-white mb-4"></div>
 
@@ -35,7 +35,7 @@ export default function About() {
             </p>
 
             {/* Description */}
-            <p className="text-xl text-gray-300 leading-relaxed mb-6 luamRegular mr-30">
+            <p className="text-xl text-gray-300 leading-relaxed mb-6 luamRegular md:mr-30">
               Hi! I’m Dércio Fernandes, a passionate software engineer with
               experience in building web applications and creating user-friendly
               experiences. I love solving problems and bringing ideas to life
