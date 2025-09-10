@@ -73,7 +73,7 @@ export default function Experience() {
               {/* Year div */}
               <div className="relative flex justify-center items-center text-center w-1/4">
                 {/* Big Year */}
-                <span className="text-7xl font-extrabold text-blue-400 z-0 ">
+                <span className="text-7xl font-extrabold gradient-text z-0 ">
                   {item.yearLabel}
                 </span>
 

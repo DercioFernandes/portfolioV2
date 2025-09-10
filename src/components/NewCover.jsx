@@ -25,9 +25,9 @@ export default function NewCover() {
 
         {/* Quote */}
         <p className="text-6xl text-gray-600 mt-6 ml-12 italic luamLight">
-          <span className="text-8xl">“ </span>
+          <span className="text-5xl">“ </span>
           Building ideas into reality.
-          <span className="text-8xl"> „</span>
+          <span className="text-5xl"> „</span>
         </p>
       </div>
 
