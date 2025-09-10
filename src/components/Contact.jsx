@@ -6,7 +6,6 @@ export default function Contact() {
       className="pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
       style={{ backgroundImage: "url('/Map.jpg')" }} // <- change path
     >
-      <div className="absolute inset-0 bg-black/40"></div> {/* dark overlay */}
       <div className="relative max-w-2xl mx-auto px-4 text-center text-white backdrop-blur-md bg-white/10 pt-4  rounded-2xl">
         {/* Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
