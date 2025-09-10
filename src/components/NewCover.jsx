@@ -1,6 +1,7 @@
 export default function NewCover() {
   return (
-    <div
+    <section
+      id="cover"
       className="pl-40 relative w-full h-screen bg-cover bg-center grid grid-cols-2 items-center"
       style={{
         backgroundColor: "#000000ff",
@@ -49,6 +50,6 @@ export default function NewCover() {
 
       {/* Blurred div at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-55 backdrop-blur-xl"></div>
-    </div>
+    </section>
   );
 }

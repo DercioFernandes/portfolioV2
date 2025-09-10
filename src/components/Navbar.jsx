@@ -10,7 +10,7 @@ export default function Navbar() {
               {/* Shift links slightly left */}
               <li>
                 <a
-                  href="#home"
+                  href="#cover"
                   className="text-white hover:text-gray-400 transition luamRegular"
                 >
                   Home
@@ -18,18 +18,18 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#news"
+                  href="#about"
                   className="text-white hover:text-gray-400 transition  luamRegular"
                 >
-                  News
+                  About
                 </a>
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="#services"
                   className="text-white hover:text-gray-400 transition luamRegular"
                 >
-                  About Me
+                  Services
                 </a>
               </li>
             </ul>

@@ -2,7 +2,10 @@ export default function Education() {
   return (
     <>
       {/* Experience Section */}
-      <section className="w-full bg-gradient-to-b from-gray-900 to-black text-white  relative pl-45 pt-45">
+      <section
+        id="education"
+        className="w-full bg-gradient-to-b from-gray-900 to-black text-white  relative pl-45 pt-45"
+      >
         {/* Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
           Education

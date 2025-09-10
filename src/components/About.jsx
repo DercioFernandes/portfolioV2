@@ -7,7 +7,10 @@ export default function About() {
   return (
     <>
       {/* About Me Section */}
-      <section className="w-full min-h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col md:flex-row items-center px-6 md:px-20 gap-12 md:pl-100">
+      <section
+        id="about"
+        className="w-full min-h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col md:flex-row items-center px-6 md:px-20 gap-12 md:pl-100"
+      >
         {/* Left side image */}
         <div className="flex-1 relative">
           <img

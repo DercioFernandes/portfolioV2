@@ -49,7 +49,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className=" bg-gradient-to-b from-black to-gray-900 text-white luamRegular pt-45 pl-45">
+    <section
+      id="services"
+      className=" bg-gradient-to-b from-black to-gray-900 text-white luamRegular pt-45 pl-45"
+    >
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">

@@ -2,7 +2,10 @@ export default function Experience() {
   return (
     <>
       {/* Experience Section */}
-      <section className="w-full bg-gradient-to-b from-black to-gray-900 text-white pt-45 pl-45">
+      <section
+        id="experience"
+        className="w-full bg-gradient-to-b from-black to-gray-900 text-white pt-45 pl-45"
+      >
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
           Experience
         </h2>

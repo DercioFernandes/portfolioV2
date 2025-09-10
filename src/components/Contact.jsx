@@ -3,6 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section
+      id="contact"
       className="pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
       style={{ backgroundImage: "url('/Map.jpg')" }} // <- change path
     >

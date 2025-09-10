@@ -12,7 +12,10 @@ export default function Hobbies() {
   return (
     <>
       {/* Hobbies Section */}
-      <section className="w-full bg-gradient-to-b from-gray-900 to-black text-white pt-45 pl-45">
+      <section
+        id="hobbies"
+        className="w-full bg-gradient-to-b from-gray-900 to-black text-white pt-45 pl-45"
+      >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
           {/* Left Column: Hobbies */}
           <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8">
