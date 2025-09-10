@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hobbies from "./components/Hobbies";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       <Education />
       <Experience />
       <Hobbies />
+      <Services />
       <Projects />
+      <Contact />
       <Footer />
     </>
   );

@@ -12,7 +12,7 @@ export default function Experience() {
           {[
             {
               yearLabel: "2025",
-              date: "Oct -  ",
+              date: "Oct - ",
               company: "COMING SOON",
               description: ["More information coming soon"],
             },

@@ -1,49 +1,81 @@
-import Project from "./Project";
+import React from "react";
 
 const projects = [
-  { link: "https://github.com/XRD-Group-11/VR-CS-1.6", src: "csvr2WT.png" },
   {
+    title: "",
+    link: "https://github.com/XRD-Group-11/VR-CS-1.6",
+    src: "csvr2WT.png",
+  },
+  {
+    title: "",
     link: "https://github.com/DercioFernandes/Kiseki-Fighters",
     src: "frierenUWT.png",
   },
   {
+    title: "",
     link: "https://github.com/DercioFernandes/AnimeUltimaPAP",
     src: "aniultWT.png",
   },
   {
+    title: "",
     link: "https://github.com/DercioFernandes/Njord-Presentation",
     src: "njordWT.png",
   },
   {
+    title: "",
     link: "https://github.com/DercioFernandes/VIA-Marketplace",
     src: "viamarketWT.png",
   },
   {
-    link: "https://github.com/DercioFernandes/portfolioV2",
-    src: "portWT.png",
+    title: "More",
+    link: "https://github.com/DercioFernandes/",
+    src: "azulejos.png",
   },
 ];
 
 export default function Projects() {
-  console.log(projects);
   return (
-    <div className="w-full">
-      <div className="relative flex flex-wrap w-full">
-        {projects.map((proj) => {
-          return <Project link={proj.link} src={proj.src} />;
-        })}
-      </div>
+    <section className="py-16 bg-gradient-to-b from-gray-900 to-black text-white luamRegular pb-40">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Title */}
+        <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
+          Projects
+        </h2>
+        <hr className="w-32 border-t-4 mx-auto mb-20" />
 
-      <div className="w-full">
-        <a
-          href="https://github.com/DercioFernandes"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-lg text-center hover:scale-99 transform transition-transform duration-300"
-        >
-          See More on GitHub
-        </a>
+        {/* Grid */}
+        <div className="grid max-w-4xl mx-auto gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group aspect-square overflow-hidden rounded-xl"
+            >
+              {/* Background Image */}
+              <img
+                src={project.src}
+                alt={project.title}
+                className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition duration-500"
+              />
+
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/60 to-transparent opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition duration-500"></div>
+
+              {/* Title */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-white text-6xl font-semibold text-center drop-shadow-md">
+                  {project.title}
+                </h3>
+              </div>
+
+              {/* Scale Effect */}
+              <div className="absolute inset-0 group-hover:scale-105 transition duration-500 ease-out"></div>
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

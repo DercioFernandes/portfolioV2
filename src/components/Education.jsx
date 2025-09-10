@@ -22,12 +22,12 @@ export default function Education() {
               desc: "Graduate from VIA University - Denmark",
             },
             {
-              year: "2025",
+              year: "2024",
               title: "XR Electives",
               desc: "VIA University - Denmark",
             },
             {
-              year: "2025",
+              year: "2024",
               title: "Machine Learning and Deep Learning Electives",
               desc: "VIA University - Denmark",
             },
