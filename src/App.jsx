@@ -14,6 +14,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import { useWindowWidth } from "./hooks/useWindowWidth";
 import CoverDecider from "./components/CoverDecider";
+import MobileNavbar from "./components/MobileNavbar";
 
 function App() {
   const width = useWindowWidth();
@@ -22,7 +23,7 @@ function App() {
   console.log(isMobile);
   return (
     <>
-      {isMobile ? "" : <Navbar />}
+      {isMobile ? <MobileNavbar /> : <Navbar />}
       {isMobile ? "" : <SideBar />}
       <CoverDecider />
       <Statistics />

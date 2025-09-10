@@ -72,6 +72,16 @@
   animation: movePattern 20s linear infinite;
 }
 
+.mobile-navbar-bg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/darkgradient.jpg");
+}
+
+.clip-path-curvy {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+}
+
 .gradient-text {
   background: linear-gradient(90deg, #006eff, #00d9ff, #0059ff, #0088ff);
   background-size: 300% 100%; /* makes the gradient much wider than text */
