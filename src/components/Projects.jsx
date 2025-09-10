@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-900 to-black text-white luamRegular pb-40">
+    <section className=" bg-gradient-to-b from-gray-900 to-black text-white luamRegular pt-45 pl-45 pb-45">
       <div className="max-w-6xl mx-auto px-4">
         {/* Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">

@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section
-      className="py-40 md:pl-13 text-white luamRegular pb-40 bg-cover bg-center"
+      className="pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
       style={{ backgroundImage: "url('/Map.jpg')" }} // <- change path
     >
       <div className="absolute inset-0 bg-black/40"></div> {/* dark overlay */}
@@ -19,7 +19,7 @@ export default function Contact() {
         </p>
 
         {/* Form */}
-        <form className="p-8 space-y-8 text-2xl">
+        <form className=" space-y-8 text-2xl">
           {/* Name */}
           <div>
             <input

@@ -2,7 +2,7 @@ export default function Education() {
   return (
     <>
       {/* Experience Section */}
-      <section className="w-full min-h-screen bg-gradient-to-b from-gray-900 to-black text-white px-8 py-24 relative pl-45">
+      <section className="w-full bg-gradient-to-b from-gray-900 to-black text-white  relative pl-45 pt-45">
         {/* Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
           Education
@@ -39,7 +39,7 @@ export default function Education() {
           ].map((item, index) => (
             <div
               key={index}
-              className={`mb-12 w-full flex flex-col md:flex-row items-center justify-between ${
+              className={`pb-12 w-full flex flex-col md:flex-row items-center justify-between ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >

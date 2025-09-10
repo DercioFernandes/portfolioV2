@@ -49,7 +49,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-16 bg-gradient-to-b from-black to-gray-900 text-white luamRegular">
+    <section className=" bg-gradient-to-b from-black to-gray-900 text-white luamRegular pt-45 pl-45">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
@@ -58,7 +58,7 @@ export default function Services() {
         <hr className="w-32 border-t-4 mx-auto mb-20" />
 
         {/* Grid */}
-        <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center mb-20">
+        <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center pb-20">
           {services.map((service, index) => (
             <div key={index}>
               <FontAwesomeIcon
