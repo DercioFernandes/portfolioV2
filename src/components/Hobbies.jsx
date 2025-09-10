@@ -14,7 +14,7 @@ export default function Hobbies() {
       {/* Hobbies Section */}
       <section
         id="hobbies"
-        className="w-full bg-gradient-to-b from-gray-900 to-black text-white pt-45 pl-45"
+        className="w-full bg-gradient-to-b from-gray-900 to-black text-white pt-45 md:pl-45"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
           {/* Left Column: Hobbies */}
@@ -55,11 +55,11 @@ export default function Hobbies() {
           </div>
           {/* Right Column: Description */}
           <div className="flex-1 flex flex-col justify-center">
-            <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
+            <h2 className="text-5xl font-extrabold text-center pt-10 md:pt-0  mb-5 luamRegular">
               Hobbies
             </h2>
             <hr className="w-32 border-t-4 mx-auto mb-10" />
-            <p className="luamRegular text-gray-300 text-2xl">
+            <p className="luamRegular text-gray-300 text-2xl text-center">
               I enjoy a variety of hobbies that keep me creative, motivated, and
               active. From traveling to new places and exploring cultures, to
               gaming, music, and coding, I like to challenge myself and stay

@@ -51,7 +51,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className=" bg-gradient-to-b from-black to-gray-900 text-white luamRegular pt-45 pl-45"
+      className=" bg-gradient-to-b from-black to-gray-900 text-white luamRegular pt-45 md:pl-45"
     >
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}

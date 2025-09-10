@@ -37,7 +37,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" bg-gradient-to-b from-gray-900 to-black text-white luamRegular pt-45 pl-45 pb-45"
+      className=" bg-gradient-to-b from-gray-900 to-black text-white luamRegular pt-45 md:pl-45 pb-45"
     >
       <div className="max-w-6xl mx-auto px-4">
         {/* Title */}

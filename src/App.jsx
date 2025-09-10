@@ -12,13 +12,19 @@ import Experience from "./components/Experience";
 import Hobbies from "./components/Hobbies";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import { useWindowWidth } from "./hooks/useWindowWidth";
+import CoverDecider from "./components/CoverDecider";
 
 function App() {
+  const width = useWindowWidth();
+  if (width === null) return null; // wait until width is known
+  const isMobile = width <= 768;
+  console.log(isMobile);
   return (
     <>
-      <Navbar />
-      <SideBar />
-      <NewCover />
+      {isMobile ? "" : <Navbar />}
+      {isMobile ? "" : <SideBar />}
+      <CoverDecider />
       <Statistics />
       <About />
       <Education />

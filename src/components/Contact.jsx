@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
+      className="md:pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
       style={{ backgroundImage: "url('/Map.jpg')" }} // <- change path
     >
       <div className="relative max-w-2xl mx-auto px-4 text-center text-white backdrop-blur-md bg-white/10 pt-4  rounded-2xl">

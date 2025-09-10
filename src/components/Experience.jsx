@@ -1,10 +1,14 @@
+import { useWindowWidth } from "../hooks/useWindowWidth";
+
 export default function Experience() {
+  const width = useWindowWidth();
+  const isMobile = width <= 768;
   return (
     <>
       {/* Experience Section */}
       <section
         id="experience"
-        className="w-full bg-gradient-to-b from-black to-gray-900 text-white pt-45 pl-45"
+        className="w-full bg-gradient-to-b from-black to-gray-900 text-white pt-45 md:pl-45"
       >
         <h2 className="text-5xl font-extrabold text-center mb-5 luamRegular">
           Experience
@@ -72,7 +76,12 @@ export default function Experience() {
             },
             // Add more items here
           ].map((item, index) => (
-            <div key={index} className="flex flex-row items-center mb-12">
+            <div
+              key={index}
+              className={`flex ${
+                isMobile ? "flex-col" : "flex-row"
+              } items-center mb-12`}
+            >
               {/* Year div */}
               <div className="relative flex justify-center items-center text-center w-1/4">
                 {/* Big Year */}
@@ -81,13 +90,13 @@ export default function Experience() {
                 </span>
 
                 {/* Date overlay */}
-                <span className="font-extrabold absolute top-13 left-0 z-10 text-2xl text-white">
+                <span className="font-extrabold absolute top-13 left-0 z-10 text-xl md:text-2xl text-white">
                   {item.date}
                 </span>
               </div>
 
               {/* Company box */}
-              <div className="flex-1 bg-gray-800/30 backdrop-blur-lg p-6 rounded-xl shadow-lg ml-8">
+              <div className="flex-1 bg-gray-800/30 backdrop-blur-lg p-6 rounded-xl shadow-lg md:ml-8">
                 <h3 className="luamBold text-3xl font-bold mb-2">
                   {item.company}
                 </h3>
