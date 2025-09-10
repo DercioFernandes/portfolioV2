@@ -48,18 +48,21 @@ export default function MobileNavbar() {
         <a
           href="#cover"
           className="text-white text-3xl font-semibold hover:text-gray-300 transition"
+          onClick={() => setOpen(false)}
         >
           Home
         </a>
         <a
           href="#services"
           className="text-white text-3xl font-semibold hover:text-gray-300 transition"
+          onClick={() => setOpen(false)}
         >
           Services
         </a>
         <a
           href="#contact"
           className="text-white text-3xl font-semibold hover:text-gray-300 transition"
+          onClick={() => setOpen(false)}
         >
           Contact
         </a>

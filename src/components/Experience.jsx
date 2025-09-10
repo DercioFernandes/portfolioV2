@@ -96,7 +96,7 @@ export default function Experience() {
               </div>
 
               {/* Company box */}
-              <div className="flex-1 bg-gray-800/30 backdrop-blur-lg p-6 rounded-xl shadow-lg md:ml-8">
+              <div className="flex-1 bg-gray-800/30 backdrop-blur-lg p-6 rounded-xl shadow-lg mt-3 md:mt-0 md:ml-8 w-full md:w-auto">
                 <h3 className="luamBold text-3xl font-bold mb-2">
                   {item.company}
                 </h3>
