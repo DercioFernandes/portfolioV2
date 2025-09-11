@@ -61,7 +61,7 @@ export default function About() {
           {/* Social icons */}
           <div className="flex space-x-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/dercio_fernandes/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -71,7 +71,7 @@ export default function About() {
               />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/DercioFernandes"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,7 +80,7 @@ export default function About() {
                 className="text-2xl  text-gray-300 hover:text-white transition-transform hover:scale-110"
               />
             </a>
-            <a href="mailto:yourmail@gmail.com">
+            <a href="mailto:dercioarmandocc@gmail.com">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="text-2xl text-gray-300 hover:text-white transition-transform hover:scale-110"

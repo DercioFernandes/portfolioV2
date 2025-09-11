@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = encodeURIComponent(`Message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+
+    window.location.href = `mailto:dercioarmandocc@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section
       id="contact"
       className="md:pl-45 text-white luamRegular pb-40 bg-cover bg-center pt-45"
-      style={{ backgroundImage: "url('/Map.jpg')" }} // <- change path
+      style={{ backgroundImage: "url('/Map.jpg')" }}
     >
       <div className="relative max-w-2xl mx-auto px-4 text-center text-white backdrop-blur-md bg-white/10 pt-4  rounded-2xl">
         {/* Title */}
@@ -19,7 +43,7 @@ export default function Contact() {
         </p>
 
         {/* Form */}
-        <form className=" space-y-8 text-2xl">
+        <form className="space-y-8 text-2xl" onSubmit={handleSubmit}>
           {/* Name */}
           <div>
             <input
@@ -27,6 +51,8 @@ export default function Contact() {
               id="name"
               name="name"
               placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
               className="w-full bg-transparent border-b border-white/70 focus:outline-none focus:border-white text-white placeholder-gray-400 py-2 text-center"
             />
           </div>
@@ -38,6 +64,8 @@ export default function Contact() {
               id="email"
               name="email"
               placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
               className="w-full bg-transparent border-b border-white/70 focus:outline-none focus:border-white text-white placeholder-gray-400 py-2 text-center"
             />
           </div>
@@ -49,6 +77,8 @@ export default function Contact() {
               name="message"
               rows="4"
               placeholder="Your message..."
+              value={formData.message}
+              onChange={handleChange}
               className="w-full bg-transparent border-b border-white/70 focus:outline-none focus:border-white text-white placeholder-gray-400 py-2 text-center resize-none"
             ></textarea>
           </div>
