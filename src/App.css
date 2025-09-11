@@ -60,7 +60,7 @@
   background-image: url("/kanawave.jpg");
   background-repeat: repeat;
   background-position: center;
-  background-size: 800px;
+  background-size: cover;
   animation: movePattern 20s linear infinite;
 }
 
@@ -167,7 +167,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: 100% 0;
+    background-position: 1000px 0; /* px not % for repeats */
   }
 }
 
